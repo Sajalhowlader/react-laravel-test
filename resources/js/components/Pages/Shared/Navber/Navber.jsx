@@ -1,8 +1,8 @@
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { BsList } from "react-icons/bs";
 import logoImg from "../../Assets/Logo_img/logo.png";
 import "./Navber.css";
 const Navber = () => {
@@ -22,16 +22,20 @@ const Navber = () => {
                         <Nav.Link href="#action1">Why TMP?</Nav.Link>
                         <Nav.Link href="#action2">Industries</Nav.Link>
                         <Nav.Link href="#action2">Complaince</Nav.Link>
-                        <Nav.Link href="#action2">Industries</Nav.Link>
+                        <Nav.Link href="#action2">Resources</Nav.Link>
+                        <Nav.Link href="#action2">
+                            <BsList />
+                        </Nav.Link>
                     </Nav>
-                    <Form className="d-flex">
-                        <Form.Control
+
+                    <Form className="search_kj">
+                        <input
                             type="search"
                             placeholder="Search"
                             className="me-2"
                             aria-label="Search"
                         />
-                        <Button variant="outline-success">Search</Button>
+                        <p>KJ</p>
                     </Form>
                 </Navbar.Collapse>
             </Container>
