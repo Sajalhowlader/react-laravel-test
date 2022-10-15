@@ -1,0 +1,19 @@
+.nav_header {
+    padding: 20px 30px;
+    box-shadow: -2px 0px 2px 2px #0106264a;
+}
+
+.logo_img {
+    width: 200px;
+    margin-right: 30px;
+}
+
+.nav_menu a {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav_menu a:hover {
+    color: #35abe3;
+}
