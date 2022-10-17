@@ -17,10 +17,46 @@ const Banner = () => {
         {
             title: "threats",
             img: threats,
+            panelItem: [
+                "Natural",
+                "Manmade",
+                "Political",
+                "Techonology",
+                "Accidental",
+                "Operational",
+            ],
+            extraPannelIfo: [
+                "Earthquake",
+                "Floods",
+                "Thunderstorm",
+                "Lightning",
+                "Epidemic/Pandemic",
+                "Drought",
+                "Sandstorm",
+                "Extreme Weather",
+            ],
         },
         {
             title: "assets",
             img: assets,
+             panelItem: [
+                "Natural",
+                "Manmade",
+                "Political",
+                "Techonology",
+                "Accidental",
+                "Operational",
+            ],
+            extraPannelIfo: [
+                "Earthquake",
+                "Floods",
+                "Thunderstorm",
+                "Lightning",
+                "Epidemic/Pandemic",
+                "Drought",
+                "Sandstorm",
+                "Extreme Weather",
+            ],
         },
         {
             title: "users",
@@ -52,7 +88,7 @@ const Banner = () => {
                 </div>
                 <div className="features_container">
                     {features.map((feature) => (
-                        <Features feature={feature} key={feature.title}/>
+                        <Features feature={feature} key={feature.title} />
                     ))}
                 </div>
             </div>
