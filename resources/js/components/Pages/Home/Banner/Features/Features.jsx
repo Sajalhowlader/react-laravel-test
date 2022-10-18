@@ -50,7 +50,7 @@ const Features = ({ feature }) => {
                     showfeatures ? "others_features" : "hideOthers_features"
                 }
             >
-                <button onClick={() => setShowExtraPannel(true)}>
+                <button onClick={() => setShowExtraPannel(!showExtraPannel)}>
                     Natural
                 </button>
                 <button>Manmade</button>

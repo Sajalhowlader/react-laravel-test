@@ -58,11 +58,11 @@
 /* Others Features */
 
 .others_features {
-    top: 15%;
+    top: 8%;
     position: absolute;
-    right: 5%;
     font-weight: bold;
     color: white;
+    left: 7px;
 }
 .hideOthers_features {
     display: none;
@@ -76,21 +76,28 @@
     font-weight: bold;
     color: white;
     font-size: 17px;
+    text-transform: uppercase;
 }
 /* 
 
 
 /* select option style */
+
 .show_extra_panel {
     background: #ecdcc3;
     width: 100%;
     position: absolute;
     bottom: 0;
-    top: -100%;
+    /* top: -100%; */
     height: 100%;
     z-index: 1;
     transition: 200ms ease-in-out;
+    left: 100%;
 }
+.hide_extra_panel {
+    left: 30%;
+}
+
 .panel_info {
     display: flex;
     align-items: center;
@@ -104,7 +111,7 @@
 }
 
 .panel_info select {
-    width: 220px;
+    width: 35%;
     text-align: center;
     font-weight: 500;
     background: none;
@@ -112,9 +119,6 @@
     border-radius: 5px;
     border: 1px solid #ffffff;
     box-shadow: 2px 2px 2px 1px #89847c;
-}
-.hide_extra_panel {
-    top: 0;
 }
 
 /*  footer style*/
