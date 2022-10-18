@@ -26,7 +26,13 @@ const Features = ({ feature }) => {
                 {title}
             </p>
 
-            <div className="show_extra_panel">
+            <div
+                className={
+                    showExtraPannel
+                        ? "show_extra_panel hide_extra_panel"
+                        : "show_extra_panel"
+                }
+            >
                 {extraPannelIfo?.map((panel) => (
                     <div className="panel_info">
                         <p>{panel}</p>
@@ -44,7 +50,9 @@ const Features = ({ feature }) => {
                     showfeatures ? "others_features" : "hideOthers_features"
                 }
             >
-                <button onClick={()=> setShowExtraPannel(true)}>Natural</button>
+                <button onClick={() => setShowExtraPannel(true)}>
+                    Natural
+                </button>
                 <button>Manmade</button>
                 <button>Political</button>
                 <button>Techonology</button>
